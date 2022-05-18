@@ -1,36 +1,17 @@
-package com.example.demo;
+import java.util.Scanner;
+class Scanner{
+public static void main(String[] args){
+Scanner sc = new Scanner(System.in);
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
 
-@Entity
-public class Student {
-    @Id
-    private int id;
-    private String name;
+System.out.println("Enter first no.");
+int a =sc.nextInt();
+System.out.println("Enter first second no.");
+int b=sc.nextInt();
+int sum=a+b;
+System.out.println("sum is");
+System.out.println(sum);
 
-    public int getId() {
-        return id;
-    }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Student() {
-
-    }
-
-    public Student(int id, String name) {
-        this.id = id;
-        this.name = name;
-    }
+}
 }
